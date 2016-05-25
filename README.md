@@ -1,5 +1,5 @@
-#Pyhton:
-===
+#Python:
+
 Python est un langage de programmation. Il est l'un des langages de programmation les plus intéressants du moment. Facile à apprendre, python est souvent utilisé en exemple lors de l'apprentissage de la programmation.
 
 
