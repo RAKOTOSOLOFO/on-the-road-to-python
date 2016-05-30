@@ -739,7 +739,7 @@ Pour votre culture informatique sachez qu'une fonction n'est pas obligée de ren
 
 Créer un ficher `t.py`
 
-#### Exercie n°1:
+#### Exercie 1:
 * Ecrire un programme qui affiche :
 
 		"Coucou les simploniens"
@@ -758,7 +758,7 @@ Créer un ficher `t.py`
 		****** 
 		******* 
 		
-#### Exercice n°2: 
+#### Exercice 2: 
 Conseil : utilisez l’interpréteur Python.
 
 1. Constituez une liste semaine contenant les 7 jours de la semaine. À partir de cette liste,
