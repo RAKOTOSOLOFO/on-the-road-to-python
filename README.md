@@ -1,52 +1,52 @@
-#Python:
+#Python
 
 Python est un langage de programmation. Il est l'un des langages de programmation les plus intéressants du moment. Facile à apprendre, python est souvent utilisé en exemple lors de l'apprentissage de la programmation.
 
 
-#####Python c'est quoi?
+##### Python c'est quoi ?
 Python est un langage de programmation inventé par Guido van Rossum. La première version de python est sortie en 1991.
 
 Python est un langage de programmation interprété, c'est à dire qu'il n'est pas nécessaire de le compiler avant de l'exécuter. Si vous avez déjà touché un peu à la programmation, vous verrez que ce langage possède une certaine poésie. Les programmeurs s'amusent souvent à trouver la manière la plus jolie/efficace d'écrire une suite d'instructions. Rares sont ceux qui critiquent la logique Python -contrairement à javascript par exemple-.
 
-#####Que fait Python?
+##### Que fait Python ?
 Python est à la fois simple et puissant, il vous permet d'écrire des scripts très simples mais grâce à ses nombreuses bibliothèques, vous pouvez travailler sur des projets plus ambitieux.
 
 * Web: Aujourd'hui python combiné avec le framework Django est un très bon choix technologique pour des gros projets de sites internet.
 
 * Système: Python est également souvent utilisé par les admin système pour créer des tâches dites répétitives ou simplement de maintenance. D'ailleurs si vous voulez créer des applications java en codant en python, c'est possible grâce au projet Jython.
 
-#####Pourquoi préférer Python aux autres langages?
+##### Pourquoi préférer Python aux autres langages ?
 Python est un langage facile à apprendre et son code est plus lisible, il est donc plus facile à maintenir. Il est parfois jusqu'à 5 fois plus concis que le langage Java par exemple, ce qui augmente la productivité du développeur et réduit mécaniquement le nombre de bugs.
 
 Python est également utilisé dans les milieux scientifiques, par exemple la bioinformatique. Des librairies sont disponibles pour ce domaine comme le module biopython.
 
 Il existe également des bibliothèques facilitant la création de jeux vidéo en 2D (et 3D) exemple: [pyGame](http://www.pygame.org/news.html)
 
-#####Qui utilise Python?
+##### Qui utilise Python ?
 Google (Guido van Rossum a travaillé pour Google de 2005 à 2012), Yahoo, Microsoft, la Nasa revendique l'utilisation de Python, pour ne citer qu'eux.
 
 ===
-#Installation:
+# Installation:
 
-###Installer python sur Linux ou MacOS
+### Installer python sur Linux ou MacOS
 Si vous travaillez dans un environnement Linux ou MacOS, bonne nouvelle Python déjà installé.
 
-###Installer python sur Windows
+### Installer python sur Windows
 Si vous êtes sur Windows, changez de système d'exploitation...
 
 Personnellement j'adore travailler avec Ubuntu, en tant que développeur vous avez vraiment l'impression de maîtriser votre machine et en plus tout y est gratuit. De plus sous serez souvent amené à migrer votre travail sur un serveur de production qui peut tourner sur une distrib linux. Il faut savoir qu'aujourd'hui plus de projets sont hébergés sur des serveur linux que sur des licences propriétaires.
 
 Mais si vous voulez tout de même garder Windows -malgré tous mes efforts pour vous convertir dans le monde libre-, vous pouvez télécharger un fichier d'installation python à cette adresse: [Télécharger Python](https://www.python.org/download/)
 
-###Quelle version choisir?
+### Quelle version choisir ?
 Essayez de prendre la version la plus récente / stable. À noter que la version la plus utilisée aujourd'hui est la version 2.7
 
 Il existe des [problèmes des compatibilités entre la version python 2 et 3](http://apprendre-python.com/page-syntaxe-differente-python2-python3-python-differences). Je vous conseille donc d'apprendre python 2 puis d'apprendre les différences entre ces deux versions. Vous serez ainsi capable de gérer les problèmes liés à d'inévitables migrations.
 ___
 
-#Editeurs Python:
+# Editeurs Python:
 
-####Sublime Text
+#### Sublime Text
 Alors lui c'est mon petit favori. Il est ultra light, il est beau, il est fort, il est puissant!
 
 Sublime text possède tout une panoplie de plugins dont vous serez vite accroc! Sa version de base est gratuite, une petite alerte vous demandera de temps en temps si vous voulez acheter une licence pour soutenir le projet mais rien ne vous oblige à le faire.
@@ -67,7 +67,7 @@ Voici une petite liste des raccourcis le plus utiles:
 	CTRL + SHIFT + F	Faire une recherche sur les fichiers d'un dossier
 	CTRL + ALT + P	Switcher de projet
 	
-####L'édtieur Wing IDE
+#### L'édtieur Wing IDE
 WingIDE est l'un des meilleurs éditeurs -avec interpréteur intégré- pour les débutants dans sa version gratuite.
 
 WingIDE a été conçu par des développeurs python pour des développeurs python surtout pour l'enseignement de python. La version gratuite possède évidemment moins d'options que la version profesionnelle (le prix reste assez bas pour la version pro: 45 $).
@@ -79,9 +79,9 @@ Si vous êtes sous Ubuntu téléchargez le .deb, double cliquez sur le fichier e
 	sudo apt-get install -f
 
 ===
-#Calculs et varialbes:
+# Calculs et variables:
 
-###Calculs
+### Calculs
 Une des premières fonctionnalités d'un interpréteur est de faire des calculs:
 
 	>>> 1+2
@@ -149,7 +149,7 @@ Evidemment, si vous essayez de faire des additions avec des variables qui sont d
 	TypeError: cannot concatenate 'str' and 'int' objects
 Vous remarquez que l'interpréteur est sympa puisqu'il vous dit ce qui ne va pas: Il ne peut pas concaténer `str` et `int`.
 ___
-#Nommer une variable
+# Nommer une variable
 Vous ne pouvez pas nommer les variables comme bon vous semble, puisqu'il existe déjà des mots utilisés par Python. Voici la liste des mots réservé par python:
 
 	print in and or if del for is raise assert elif from lambda return break else global not try class except while continue exec import pass yield def finally
@@ -166,7 +166,7 @@ Pour nommer une variable vous devez obligatoirement utiliser les lettres de l'al
 	
 Comme vous le remarquez, python refuse ce genre de syntaxe, mais il acceptera `var1 = 1`.
 ___
-#Les types de variables:
+# Les types de variables:
 
 En python une variable est typée, c'est à dire qu'en plus d'une valeur, une variable possède une sorte d'étiquette qui indique ce que contient cette boite virtuelle.
 
@@ -192,10 +192,10 @@ Pour connaitre le type d'une variable, vous pouvez utiliser la fonction `type()`
 	<type 'float'>
 	
 ===
-#Les listes:
+# Les listes:
 Les listes (ou `list` / `array`) en python sont une variable dans laquelle on peut mettre plusieurs variables.
 
-###Créer une liste en python
+### Créer une liste en python
 Pour créer une liste, rien de plus simple:
 
 	>>> liste = []
@@ -204,7 +204,7 @@ Vous pouvez voir le contenu de la liste en l'appelant comme ceci:
 	>>> liste
 	<type 'list'>
 
-###Ajouter une valeur à une liste python
+### Ajouter une valeur à une liste python
 Vous pouvez ajouter les valeurs que vous voulez lors de la création de la liste python:
 
 	>>> liste = [1,2,3]
@@ -223,7 +223,7 @@ Ou les ajouter après la création de la liste avec la méthode `append` (qui si
 	>>> liste
 	[1, 'ok']
 On voit qu'il est possible de mélanger dans une même liste des variables de type différent. On peut d'ailleurs mettre une liste dans une liste.
-###Afficher un item d'une liste
+### Afficher un item d'une liste
 Pour lire une liste, on peut demander à voir l'index de la valeur qui nous intéresse:
 
 	>>> liste = ["a","d","m"]
@@ -243,7 +243,7 @@ Il est d'ailleurs possible de modifier une valeur avec son index
 	>>> liste[2] = "z"
 	>>> liste
 	['a', 'd', 'z']
-###Supprimer une entrée avec un index
+### Supprimer une entrée avec un index
 Il est parfois nécessaire de supprimer une entrée de la liste. Pour cela vous pouvez utiliser la fonction `del`.
 
 	>>> liste = ["a", "b", "c"]
@@ -251,20 +251,20 @@ Il est parfois nécessaire de supprimer une entrée de la liste. Pour cela vous 
 	>>> liste
 	['a', 'c']
 	
-###Inverser les valeurs d'une liste
+### Inverser les valeurs d'une liste
 Vous pouvez inverser les items d'une liste avec la méthode reverse.
 
 	>>> liste = ["a", "b", "c"]
 	>>> liste.reverse()
 	>>> liste
 	['c', 'b', 'a']
-###Compter le nombre d'items d'une liste
+### Compter le nombre d'items d'une liste
 Il est possible de compter le nombre d'items d'une liste avec la fonction len.
 
 	>>> liste = [1,2,3,5,10]
 	>>> len(liste)
 	5
-###Compter le nombre d'occurences d'une valeur
+### Compter le nombre d'occurences d'une valeur
 Pour connaitre le nombre d'occurences d'une valeur dans une liste, vous pouvez utiliser la méthode count.
 
 	>>> liste = ["a","a","a","b","c","c"]
@@ -272,14 +272,14 @@ Pour connaitre le nombre d'occurences d'une valeur dans une liste, vous pouvez u
 	3
 	>>> liste.count("c")
 	2
-###Trouver l'index d'une valeur
+### Trouver l'index d'une valeur
 La méthode `index` vous permet de connaitre la position de l'item cherché.
 
 	>>> liste = ["a","a","a","b","c","c"]
 	>>> liste.index("b")
 	3
 
-###Manipuler une liste
+### Manipuler une liste
 Voici quelques astuces pour manipuler des listes:
 
 	>>> liste = [1, 10, 100, 250, 500]
@@ -295,7 +295,7 @@ Voici quelques astuces pour manipuler des listes:
 	[1, 10, 69, 70, 500]
 	>>> liste[:] = [] # vide la liste
 	[]
-###Boucler sur une liste
+### Boucler sur une liste
 Pour afficher les valeurs d'une liste, on peut utiliser une boucle:
 
 	>>> liste = ["a","d","m"]
@@ -316,7 +316,7 @@ Si vous voulez en plus récupérer l'index, vous pouvez utiliser la fonction `en
 
 Les valeurs retournées par la boucle sont des tuples.
 
-###Copier une liste
+### Copier une liste
 Beaucoup de débutants font l'erreur de copier une liste de cette manière
 
 	>>> x = [1,2,3]
@@ -350,19 +350,19 @@ Pour des données plus complexes, vous pouvez utiliser la fonction `deepcopy` du
 	[[1, 2], 2]
 	>>> y
 	[[1, 2], [1, 2, 3]]
-###Transformer une string en liste
+### Transformer une string en liste
 Parfois il peut être utile de transformer une chaine de caractère en liste. Cela est possible avec la méthode `split.
 
 	>>> ma_chaine = "Olivier:ENGEL:Strasbourg"
 	>>> ma_chaine.split(":")
 	['Olivier', 'ENGEL', 'Strasbourg']
-###Transformer une liste en string
+### Transformer une liste en string
 L'inverse est possible avec la méthode "join".
 
 	>>> liste = ["Olivier","ENGEL","Strasbourg"]
 	>>> ":".join(liste)
 	'Olivier:ENGEL:Strasbourg'
-###Trouver un item dans une liste
+### Trouver un item dans une liste
 Pour savoir si un élément est dans une liste, vous pouvez utiliser le mot clé in de cette manière:
 
 	>>> liste = [1,2,3,5,10]
@@ -370,12 +370,12 @@ Pour savoir si un élément est dans une liste, vous pouvez utiliser le mot clé
 	True
 	>>> 11 in liste
 	False
-###La fonction range
+### La fonction range
 La fonction `range` génère une liste composée d'une simple suite arithmétique.
 
 	>>> range(10)
 	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-###Agrandir une liste par une liste
+### Agrandir une liste par une liste
 Pour mettre bout à bout deux listes, vous pouvez utiliser la méthode `extend`
 
 	>>> x = [1, 2, 3, 4]
@@ -384,7 +384,7 @@ Pour mettre bout à bout deux listes, vous pouvez utiliser la méthode `extend`
 	>>> print x
 	[1, 2, 3, 4, 4, 5, 1, 0]
 	
-###Astuces
+### Astuces
 Afficher les 2 premiers éléments d'une liste
 
 	>>> liste = [1,2,3,4,5]
@@ -421,15 +421,17 @@ Ce qui peut être utile pour initialiser une liste:
 	>>> [0] * 5
 	[0, 0, 0, 0, 0]
 ___
-#Les tuples:
+
+# Les tuples:
 
 Un tuple est une liste qui ne peut plus être modifiée.
 
-###Créer un tuple
+### Créer un tuple
 Pour créer un tuple, vous pouvez utiliser la syntaxe suivante:
 
 	>>> mon_tuple = ()
-###Ajouter une valeur à un tuple
+
+### Ajouter une valeur à un tuple
 Pour créer un tuple avec des valeurs, vous pouvez le faire de cette façon:
 
 	>>> mon_tuple = (1, "ok", "olivier")
@@ -446,7 +448,8 @@ Lorsque vous créez un tuple avec une seule valeur, n'oubliez pas d'y ajouter un
 	>>> mon_tuple = ("ok",)
 	>>> type(mon_tuple)
 	<type 'tuple'>
-###Afficher une valeur d'un tuple
+
+### Afficher une valeur d'un tuple
 Le tuple est une sorte de liste, on peut donc utiliser la même syntaxe pour lire les données du tuple.
 
 	>>> mon_tuple[0]
@@ -457,7 +460,8 @@ Et évidemment si on essaie de changer la valeur d'un index, l'interpreteur nous
 	Traceback (most recent call last):
 	  File "<stdin>", line 1, in <module>
 	TypeError: 'tuple' object does not support item assignment
-###A quoi sert un tuple alors?
+
+### A quoi sert un tuple alors?
 Le tuple permet une affectation multiple:
 
 	>>> v1, v2 = 11, 22
@@ -474,14 +478,16 @@ Il permet également de renvoyer plusieurs valeurs lors d'un appel d'une fonctio
 	('olivier', 'engel')
 On utilisera un tuple pour définir des sortes de constantes qui n'ont donc pas vocation à changer.
 ___
-#Les dictionnaires:
+
+# Les dictionnaires:
 Un dictionnaire en python est une sorte de liste mais au lieu d'utiliser des index, on utilise des clés, c'est à dire des valeurs autres que numériques.
 
-###Comment créer un dictionnaire?
+### Comment créer un dictionnaire?
 Pour initialiser un dictionnaire, on utile la syntaxe suivante:
 
 	>>> a = {}
-###Comment ajouter des valeurs dans un dictionnaire?
+
+### Comment ajouter des valeurs dans un dictionnaire?
 Pour ajouter des valeurs à un dictionnaire il faut indiquer une clé ainsi qu'une valeur:
 
 	>>> a = {}
@@ -490,7 +496,8 @@ Pour ajouter des valeurs à un dictionnaire il faut indiquer une clé ainsi qu'u
 	>>> a
 	{'nom': 'engel', 'prenom': 'olivier'}
 Vous pouvez utiliser des clés numériques comme dans la logique des listes.
-###Récupérer une valeur dans un dictionnaire
+
+### Récupérer une valeur dans un dictionnaire
 La méthode get vous permet de récupérer une valeur dans un dictionnaire et si la clé est introuvable, vous pouvez donner une valeur à retourner par défaut:
 
 	>>> data = {"name": "Olivier", "age": 30}
@@ -503,13 +510,15 @@ Vous pouvez utiliser la méthode haskey pour vérifier la présence d'une clé q
 
 	>>> a.has_key("nom")
 	True
-###Supprimer une entrée de dictionnaire
+
+### Supprimer une entrée de dictionnaire
 Il est possible de supprimer une entrée en indiquant sa clé, comme pour les listes:
 
 	>>> del a["nom"]
 	>>> a
 	{'prenom': 'olivier'}
-###Récupérer les clés par une boucle
+
+### Récupérer les clés par une boucle
 Pour récupérer les clés on utilise la méthode `keys`
 
 	>>> fiche = {"nom":"engel","prenom":"olivier"}
@@ -518,7 +527,8 @@ Pour récupérer les clés on utilise la méthode `keys`
 	... 
 	nom
 	prenom
-###Récupérer les valeurs par une boucle
+
+### Récupérer les valeurs par une boucle
 Pour cela on utilise la méthode `values`
 
 	>>> fiche = {"nom":"engel","prenom":"olivier"}
@@ -527,7 +537,8 @@ Pour cela on utilise la méthode `values`
 	... 
 	engel
 	olivier
-###Récupérer les clés et les valeurs par une boucle
+
+### Récupérer les clés et les valeurs par une boucle
 Pour récupérer les clés et les valeurs en même temps, on utilise la méthode `items` qui retourne un tuple.
 
 	>>> fiche = {"nom":"engel","prenom":"olivier"}
@@ -536,7 +547,8 @@ Pour récupérer les clés et les valeurs en même temps, on utilise la méthode
 	... 
 	nom engel
 	prenom olivier
-###Utiliser des tuples comme clé
+
+### Utiliser des tuples comme clé
 Une des forces de python est la combinaison tuple/dictionnaire qui fait des merveilles dans certains cas comme lors de l'utilisation de coordonnées.
 
 	>>> b = {}
@@ -544,7 +556,8 @@ Une des forces de python est la combinaison tuple/dictionnaire qui fait des merv
 	>>> b[(4,5)]=13
 	>>> b
 	{(4, 5): 13, (3, 2): 12}
-###Créer une copie indépendante d'un dictionnaire
+
+### Créer une copie indépendante d'un dictionnaire
 Comme pour toute variable, vous ne pouvez pas copier un dictionnaire en faisant dic1 = dic2:
 
 	>>> d = {"k1":"olivier", "k2":"engel"}
@@ -552,7 +565,8 @@ Comme pour toute variable, vous ne pouvez pas copier un dictionnaire en faisant 
 	>>> d["k1"] = "XXX"
 	>>> e
 	{'k2': 'engel', 'k1': 'XXX'}
-###Pour créer une copie indépendante vous pouvez utiliser la méthode `copy`:
+
+### Pour créer une copie indépendante vous pouvez utiliser la méthode `copy`:
 
 	>>> d = {"k1":"olivier", "k2":"engel"}
 	>>> e = d.copy()
@@ -560,11 +574,12 @@ Comme pour toute variable, vous ne pouvez pas copier un dictionnaire en faisant 
 	>>> e
 	{'k2': 'engel', 'k1': 'olivier'}
 ___
-#Les fonctions:
+
+# Les fonctions:
 
 Une `fonction` (ou function) est une suite d'instructions que l'on peut appeler avec un nom.
 
-###Créer ma première fonction
+### Créer ma première fonction
 Créons une fonction qui nous retournera un âge:
 
 	>>> def indique_mon_age():
@@ -578,7 +593,7 @@ Tout d'abord pour indiquer à l'interpréteur que vous voulez créer une fonctio
 
 On remarque également qu'il y a un espace entre les 3 points et le mot clé "return", il s'agit d'une indentation, c'est à dire un espace qui améliore non seulement la lecture de la fonction mais qui indique que nous sommes toujours dans la fonction. Lorsque l'action demandée n'est plus dans la fonction, il ne faut plus indenter le texte. Pour indenter du texte, vous devez appuyer sur la `touche TAB` de votre clavier -ou dans d'autres cas créer 4 espaces manuellement.
 
-###Les paramètres
+### Les paramètres
 Créons une autre fonction:
 
 	>>> def augmente_moi(a):
@@ -597,7 +612,7 @@ Il est d'ailleurs possible d'utiliser plusieurs paramètres:
 	33
 Si vous avez compris les principes des fonctions, vous avez compris 80% de ce qu'est la programmation.
 
-###Un paramètre est obligatoire
+### Un paramètre est obligatoire
 Lorsque vous indiquez des paramètres à une fonction, ces dernièrs doivent impérativement être renseignés sans quoi une erreur apparaitra.
 
 	>>> def augmente_moi(a, b):
@@ -608,14 +623,15 @@ Lorsque vous indiquez des paramètres à une fonction, ces dernièrs doivent imp
   	File "<stdin>", line 1, in <module>
 	TypeError: augmente_moi() takes exactly 2 arguments (1 given)
 
-###L'opérateur splat
+### L'opérateur splat
 L'opérateur splat : `*` est très souvent utilisé en python.
 
 	def ma_function(*var)
 	def ma_function(**var)
 	ma_function(*var)
 	ma_function(**var)
-###Une liste en paramètre
+
+### Une liste en paramètre
 On peut récupérer les valeurs renseignées via une liste:
 
 	>>> def augmente_moi(*param):
@@ -625,7 +641,8 @@ On peut récupérer les valeurs renseignées via une liste:
 	6
 	>>> augmente_moi(10, 20, 30)
 	60
-###Rendre obligatoire uniquement certains paramètres avec une liste
+
+### Rendre obligatoire uniquement certains paramètres avec une liste
 Si vous désirez rendre obligatoire uniquement certains paramètres, vous pouvez utiliser la syntaxe suivante:
 
 	>>> def ma_fiche(prenom, nom, *reste):
@@ -635,6 +652,7 @@ Si vous désirez rendre obligatoire uniquement certains paramètres, vous pouvez
 	'olivier engel'
 
 On remarque que le paramètres "reste" est précédé d'une étoile `*`.
+
 ###Utiliser un dictionnaire pour les paramètres
 Vous pouvez utiliser un dictionnaire en paramètres pour cela vous devez ajouter une double étoile: `**`
 
