@@ -1,7 +1,6 @@
-#Python
+# Python
 
 Python est un langage de programmation. Il est l'un des langages de programmation les plus intéressants du moment. Facile à apprendre, python est souvent utilisé en exemple lors de l'apprentissage de la programmation.
-
 
 ##### Python c'est quoi ?
 Python est un langage de programmation inventé par Guido van Rossum. La première version de python est sortie en 1991.
@@ -24,8 +23,8 @@ Il existe également des bibliothèques facilitant la création de jeux vidéo e
 
 ##### Qui utilise Python ?
 Google (Guido van Rossum a travaillé pour Google de 2005 à 2012), Yahoo, Microsoft, la Nasa revendique l'utilisation de Python, pour ne citer qu'eux.
-
 ===
+
 # Installation:
 
 ### Installer python sur Linux ou MacOS
@@ -79,6 +78,7 @@ Si vous êtes sous Ubuntu téléchargez le .deb, double cliquez sur le fichier e
 	sudo apt-get install -f
 
 ===
+
 # Calculs et variables:
 
 ### Calculs
@@ -149,6 +149,7 @@ Evidemment, si vous essayez de faire des additions avec des variables qui sont d
 	TypeError: cannot concatenate 'str' and 'int' objects
 Vous remarquez que l'interpréteur est sympa puisqu'il vous dit ce qui ne va pas: Il ne peut pas concaténer `str` et `int`.
 ___
+
 # Nommer une variable
 Vous ne pouvez pas nommer les variables comme bon vous semble, puisqu'il existe déjà des mots utilisés par Python. Voici la liste des mots réservé par python:
 
@@ -166,6 +167,7 @@ Pour nommer une variable vous devez obligatoirement utiliser les lettres de l'al
 	
 Comme vous le remarquez, python refuse ce genre de syntaxe, mais il acceptera `var1 = 1`.
 ___
+
 # Les types de variables:
 
 En python une variable est typée, c'est à dire qu'en plus d'une valeur, une variable possède une sorte d'étiquette qui indique ce que contient cette boite virtuelle.
@@ -192,6 +194,7 @@ Pour connaitre le type d'une variable, vous pouvez utiliser la fonction `type()`
 	<type 'float'>
 	
 ===
+
 # Les listes:
 Les listes (ou `list` / `array`) en python sont une variable dans laquelle on peut mettre plusieurs variables.
 
@@ -223,6 +226,7 @@ Ou les ajouter après la création de la liste avec la méthode `append` (qui si
 	>>> liste
 	[1, 'ok']
 On voit qu'il est possible de mélanger dans une même liste des variables de type différent. On peut d'ailleurs mettre une liste dans une liste.
+
 ### Afficher un item d'une liste
 Pour lire une liste, on peut demander à voir l'index de la valeur qui nous intéresse:
 
@@ -243,6 +247,7 @@ Il est d'ailleurs possible de modifier une valeur avec son index
 	>>> liste[2] = "z"
 	>>> liste
 	['a', 'd', 'z']
+
 ### Supprimer une entrée avec un index
 Il est parfois nécessaire de supprimer une entrée de la liste. Pour cela vous pouvez utiliser la fonction `del`.
 
@@ -258,12 +263,14 @@ Vous pouvez inverser les items d'une liste avec la méthode reverse.
 	>>> liste.reverse()
 	>>> liste
 	['c', 'b', 'a']
+
 ### Compter le nombre d'items d'une liste
 Il est possible de compter le nombre d'items d'une liste avec la fonction len.
 
 	>>> liste = [1,2,3,5,10]
 	>>> len(liste)
 	5
+
 ### Compter le nombre d'occurences d'une valeur
 Pour connaitre le nombre d'occurences d'une valeur dans une liste, vous pouvez utiliser la méthode count.
 
@@ -272,6 +279,7 @@ Pour connaitre le nombre d'occurences d'une valeur dans une liste, vous pouvez u
 	3
 	>>> liste.count("c")
 	2
+
 ### Trouver l'index d'une valeur
 La méthode `index` vous permet de connaitre la position de l'item cherché.
 
@@ -295,6 +303,7 @@ Voici quelques astuces pour manipuler des listes:
 	[1, 10, 69, 70, 500]
 	>>> liste[:] = [] # vide la liste
 	[]
+
 ### Boucler sur une liste
 Pour afficher les valeurs d'une liste, on peut utiliser une boucle:
 
@@ -350,18 +359,21 @@ Pour des données plus complexes, vous pouvez utiliser la fonction `deepcopy` du
 	[[1, 2], 2]
 	>>> y
 	[[1, 2], [1, 2, 3]]
+
 ### Transformer une string en liste
 Parfois il peut être utile de transformer une chaine de caractère en liste. Cela est possible avec la méthode `split.
 
 	>>> ma_chaine = "Olivier:ENGEL:Strasbourg"
 	>>> ma_chaine.split(":")
 	['Olivier', 'ENGEL', 'Strasbourg']
+
 ### Transformer une liste en string
 L'inverse est possible avec la méthode "join".
 
 	>>> liste = ["Olivier","ENGEL","Strasbourg"]
 	>>> ":".join(liste)
 	'Olivier:ENGEL:Strasbourg'
+
 ### Trouver un item dans une liste
 Pour savoir si un élément est dans une liste, vous pouvez utiliser le mot clé in de cette manière:
 
@@ -370,11 +382,13 @@ Pour savoir si un élément est dans une liste, vous pouvez utiliser le mot clé
 	True
 	>>> 11 in liste
 	False
+
 ### La fonction range
 La fonction `range` génère une liste composée d'une simple suite arithmétique.
 
 	>>> range(10)
 	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 ### Agrandir une liste par une liste
 Pour mettre bout à bout deux listes, vous pouvez utiliser la méthode `extend`
 
@@ -653,7 +667,7 @@ Si vous désirez rendre obligatoire uniquement certains paramètres, vous pouvez
 
 On remarque que le paramètres "reste" est précédé d'une étoile `*`.
 
-###Utiliser un dictionnaire pour les paramètres
+### Utiliser un dictionnaire pour les paramètres
 Vous pouvez utiliser un dictionnaire en paramètres pour cela vous devez ajouter une double étoile: `**`
 
 	>>> def ma_fiche(**parametres):
@@ -661,13 +675,15 @@ Vous pouvez utiliser un dictionnaire en paramètres pour cela vous devez ajouter
 	...
 	>>> ma_fiche(prenom="olivier")
 	'olivier'
-###Utilisation de splat liste au niveau des appels de fonctions
+
+### Utilisation de splat liste au niveau des appels de fonctions
 Reprennons l'exemple de la fonction augmente_moi:
 
 	>>> def augmente_moi(*param):
 	...     return param[0] + param[1] + param[2]
 	... 
-###Nous avons vu qu'il était possible de faire ceci:
+
+### Nous avons vu qu'il était possible de faire ceci:
 
 	>>> augmente_moi(1, 2, 3)
 	6
@@ -676,7 +692,8 @@ L'utilisation de l'étoile permet de passer par une liste:
 	>>> data = [1, 2, 3]
 	>>> augmente_moi(*data)
 	6
-###Utilisation de splat dictionnaire au niveau des appels de fonctions
+
+### Utilisation de splat dictionnaire au niveau des appels de fonctions
 Prénons l'exemple de cette fonction:
 
 	>>> def test(firstname="", lastname=""):
@@ -692,7 +709,8 @@ Puis avec deux étoiles `**`
 
 	>>> test(**data)
 	'olivier engel'
-###Portée des variables (variable globale et variable locale)
+
+### Portée des variables (variable globale et variable locale)
 Une variable déclarée à la racine d'un module est visible dans tout ce module. On parle alors de variable globale.
 
 	>>> x = "hello"
@@ -710,5 +728,6 @@ Et une variable déclarée dans une fonction ne sera visible que dans cette fonc
 	>>> test()
 	>>> x
 	False
-###Procédure et fonctions
+
+### Procédure et fonctions
 Pour votre culture informatique sachez qu'une fonction n'est pas obligée de renvoyer une valeur, on parlera alors dans ce cas plutôt de procédure.
