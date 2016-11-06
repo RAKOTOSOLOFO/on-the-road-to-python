@@ -23,7 +23,6 @@ Il existe également des bibliothèques facilitant la création de jeux vidéo e
 
 ##### Qui utilise Python ?
 Google (Guido van Rossum a travaillé pour Google de 2005 à 2012), Yahoo, Microsoft, la Nasa revendique l'utilisation de Python, pour ne citer qu'eux.
-===
 
 # Installation:
 
@@ -41,7 +40,6 @@ Mais si vous voulez tout de même garder Windows -malgré tous mes efforts pour 
 Essayez de prendre la version la plus récente / stable. À noter que la version la plus utilisée aujourd'hui est la version 2.7
 
 Il existe des [problèmes des compatibilités entre la version python 2 et 3](http://apprendre-python.com/page-syntaxe-differente-python2-python3-python-differences). Je vous conseille donc d'apprendre python 2 puis d'apprendre les différences entre ces deux versions. Vous serez ainsi capable de gérer les problèmes liés à d'inévitables migrations.
-___
 
 # Editeurs Python:
 
@@ -76,8 +74,6 @@ Vous pouvez télécharger le logiciel dans sa version gratuite ici: IDE python W
 Si vous êtes sous Ubuntu téléchargez le .deb, double cliquez sur le fichier et cliquez sur installer. Si vous rencontrez des problèmes de dépendances pensez à exécuter la commande suivante:
 
 	sudo apt-get install -f
-
-===
 
 # Calculs et variables:
 
@@ -148,7 +144,6 @@ Evidemment, si vous essayez de faire des additions avec des variables qui sont d
   	File "<stdin>", line 1, in <module>
 	TypeError: cannot concatenate 'str' and 'int' objects
 Vous remarquez que l'interpréteur est sympa puisqu'il vous dit ce qui ne va pas: Il ne peut pas concaténer `str` et `int`.
-___
 
 # Nommer une variable
 Vous ne pouvez pas nommer les variables comme bon vous semble, puisqu'il existe déjà des mots utilisés par Python. Voici la liste des mots réservé par python:
@@ -166,7 +161,6 @@ Pour nommer une variable vous devez obligatoirement utiliser les lettres de l'al
 	SyntaxError: invalid syntax
 	
 Comme vous le remarquez, python refuse ce genre de syntaxe, mais il acceptera `var1 = 1`.
-___
 
 # Les types de variables:
 
@@ -193,7 +187,6 @@ Pour connaitre le type d'une variable, vous pouvez utiliser la fonction `type()`
 	>>> type(v)
 	<type 'float'>
 	
-===
 
 # Les listes:
 Les listes (ou `list` / `array`) en python sont une variable dans laquelle on peut mettre plusieurs variables.
@@ -434,7 +427,6 @@ Ce qui peut être utile pour initialiser une liste:
 
 	>>> [0] * 5
 	[0, 0, 0, 0, 0]
-___
 
 # Les tuples:
 
@@ -491,7 +483,6 @@ Il permet également de renvoyer plusieurs valeurs lors d'un appel d'une fonctio
 	>>> donne_moi_ton_nom()
 	('olivier', 'engel')
 On utilisera un tuple pour définir des sortes de constantes qui n'ont donc pas vocation à changer.
-___
 
 # Les dictionnaires:
 Un dictionnaire en python est une sorte de liste mais au lieu d'utiliser des index, on utilise des clés, c'est à dire des valeurs autres que numériques.
@@ -587,7 +578,6 @@ Comme pour toute variable, vous ne pouvez pas copier un dictionnaire en faisant 
 	>>> d["k1"] = "XXX"
 	>>> e
 	{'k2': 'engel', 'k1': 'olivier'}
-___
 
 # Les fonctions:
 
